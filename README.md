@@ -19,7 +19,7 @@ Example:
 from auction import Auction
 
 diag1 = [[0, 10], [4, 5], [6, 8]]
-diag2 = [[2, 12], [3, 7], [5, 9]]
+diag2 = [[2, 12], [3, 7]]
 
 auctionSolver = Auction()
 matching = auctionSolver.runFromData(diag1, diag2)
@@ -32,8 +32,8 @@ distance = auctionSolver.getDistanceFromMatching(matching)
 from barycenter import Barycenter
 
 diag1 = [[1, 10], [4, 7], [3, 8], [5, 6]]
-diag2 = [[0, 11], [3, 8], [4, 9], [2, 7]]
-diag3 = [[2, 15], [2, 9], [1, 7], [1, 8]]
+diag2 = [[0, 11], [3, 8], [4, 9]]
+diag3 = [[2, 15], [2, 9]]
 data = [diag1, diag2, diag3]
 
 barycenterSolver = Barycenter()
