@@ -189,7 +189,7 @@ class Auction:
         return matching
 
     def getDistanceFromMatching(self, matching):
-        return sum(list(map(lambda x: x[2], matching)))
+        return sum(list(map(lambda x: x[2], matching))) ** (1 / 2)
 
     # ----------------------------------------
     # Stopping Criterion Functions
