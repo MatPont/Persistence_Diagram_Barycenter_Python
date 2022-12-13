@@ -13,7 +13,7 @@ diag = [[0, 10], [4, 5], [6, 8]]
 
 ## Computing distance between Persistence Diagrams
 
-This repository provides an implementation of the Auction algorithm [Bertsekas, 1981] to compute a distance between Persistence diagrams, and hence an assignment between their pairs.
+This repository provides an implementation of the Auction algorithm [Bertsekas, 1981] to compute a distance between two persistence diagrams, and hence an assignment between their pairs.
 
 **Example:**
 
