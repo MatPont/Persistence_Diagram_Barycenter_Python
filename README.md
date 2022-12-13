@@ -1,6 +1,6 @@
 # Persistence_Diagram_Barycenter_Python
 
-This repository contains a python code to compute a (possibly weighted) barycenter of an ensemble of persistence diagrams
+This repository provides python classes to compute distances and a (possibly weighted) barycenter of persistence diagrams
 
 ## Persistence Diagram format
 A Persistence Diagram should be represented as a list of list where each inner list corresponds to a persistence pair with 2 values, its birth and its death.
