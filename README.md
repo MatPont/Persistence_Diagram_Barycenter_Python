@@ -57,9 +57,10 @@ diag1 = [[1, 10], [4, 7], [3, 8], [5, 6]]
 diag2 = [[0, 11], [3, 8], [4, 9]]
 diag3 = [[2, 15], [2, 9]]
 data = [diag1, diag2, diag3]
+weights = [1.0/7, 2.0/7, 4.0/7]
 
 barycenterSolver = Barycenter()
-barycenter = barycenterSolver.run(data, [1.0/7, 2.0/7, 4.0/7])
+barycenter = barycenterSolver.run(data, weights)
 ```
 
 The second parameter of the `run` function are the weights of each input diagram, the sum of the weights should be 1.
