@@ -46,6 +46,24 @@ barycenterSolver = Barycenter()
 barycenter = barycenterSolver.run(data)
 ```
 
+## Computing a weighted barycenter of an ensemble of Persistence Diagrams
+
+**Example**
+
+```
+from barycenter import Barycenter
+
+diag1 = [[1, 10], [4, 7], [3, 8], [5, 6]]
+diag2 = [[0, 11], [3, 8], [4, 9]]
+diag3 = [[2, 15], [2, 9]]
+data = [diag1, diag2, diag3]
+
+barycenterSolver = Barycenter()
+barycenter = barycenterSolver.run(data, [1.0/7, 2.0/7, 4.0/7])
+```
+
+The second parameter of the `run` function are the weights of each input diagram, the sum of the weights should be 1.
+
 ## References
 
 [Bertsekas, 1981] D. P. Bertsekas. A new algorithm for the assignment problem. Mathematical Programming, 1981.
